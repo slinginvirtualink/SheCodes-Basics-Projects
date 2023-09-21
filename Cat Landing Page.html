@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💚 Green-Eyed Cats 💚</title>
+
+    <style>
+      body {
+        background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      button {
+        color: whitesmoke;
+        background: green;
+        padding: 15px 20px;
+        display: block;
+        margin: 30px auto;
+        border: 0.5px solid #eeeeee;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      button:hover {
+        background: whitesmoke;
+        color: green;
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+        color: green;
+        display: block;
+        font-weight: bold;
+        line-height: 60px;
+        font-size: 50px;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid green;
+        border-radius: 10px;
+        padding: 30px;
+        font-size: 2em;
+        border-width: 1em;
+      }
+      img {
+        display: block;
+        margin: 50px auto;
+        border-radius: 10px;
+        max-width: 95%;
+      }
+      p {
+        line-height: 1.5;
+        text-align: center;
+        font-size: larger;
+      }
+      span {
+        display: table;
+        margin: 0 auto;
+        padding: 20px 20px 50px 20px;
+      }
+      .learn-more {
+        color: green;
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .mid {
+        color: green;
+        text-decoration: none;
+      }
+      .mid:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Cats!</h1>
+      <h2>💚 Especially ones with green eyes 💚</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/843/original/jude-mack-llYtBVSEHnU-unsplash.jpg?1695320106"
+        alt="Sitting cat with green eyes"
+      />
+      <p>
+        Green eyes are caused by a low number of melanocytes (or melanin cells),
+        but the shade of green is determined by the activity of the cells.
+        <br />
+        Purebred cats are more likely to have more brilliantly colored eyes than
+        mixed breed cats, although this is not always the case.
+      </p>
+      <a
+        href="https://petkeen.com/are-cats-with-green-eyes-common/"
+        target="_blank"
+        class="learn-more"
+      >
+        <p>
+          <stong><em>Learn more green-eyed cat facts on petkeen.com</em></stong>
+        </p>
+      </a>
+
+      <button class="cat-facts">🐈 Cat Facts 🐈</button>
+      <span>
+        This page built by
+        <a
+          href="https://www.linkedin.com/in/creativemariannerobinson/"
+          target="_blank"
+          class="mid"
+        >
+          Marianne Robinson
+        </a>
+      </span>
+      <hr />
+    </div>
+    <script>
+      function contact() {
+        let firstName = prompt("What is your first name?");
+        if (firstName === "x") {
+          alert("😺 visit litter-robot.com/blog/ to learn more about cats! 🐾");
+        } else {
+          let email = prompt("What is your email address?");
+          let website = alert(
+            `Thank you ${firstName}, we'll be in touch. In the meantime visit litter-robot.com/blog/ to learn more about cats! 🐾`
+          );
+        }
+      }
+      let catFacts = document.querySelector(".cat-facts");
+      catFacts.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
