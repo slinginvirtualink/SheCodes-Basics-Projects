@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🖼️Collaging</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 131, 61) 0%,
+          rgb(249, 183, 23) 90%
+        );
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid green;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px 15px;
+        background: white;
+      }
+      button:hover {
+        transition: all 300ms ease-in-out;
+        cursor: pointer;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 203, 50) 0%,
+          rgb(244, 56, 98) 100.2%
+        );
+      }
+      div {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .theme-button {
+        font-size: 15px;
+        background: black;
+        color: white;
+        padding: 5px 10px;
+        border-color: white;
+      }
+      .theme-button:hover {
+        color: black;
+        background: white;
+        transition: all 150ms ease-in-out;
+      }
+      .hausmann {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .hausmann:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+      }
+      .hoch {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .hoch:hover {
+        filter: drop-shadow(16px 16px 20px red) invert(75%);
+        transform: scale(1.2);
+      }
+      .ernst {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .ernst:hover {
+        filter: hue-rotate(90deg);
+        transform: scale(1.2);
+      }
+      .mksg {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .mksg:hover {
+        filter: grayscale(80%);
+        transform: scale(1.2);
+      }
+      .sacc {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .sacc:hover {
+        filter: sepia(60%);
+        transform: scale(1.2);
+      }
+      .grid {
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .dark {
+        background: black;
+        color: orange;
+      }
+      .dark .container {
+        background: gray;
+      }
+      .dark a {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>Collaging</h1>
+      <h2>✂️ The Art of Making ✂️</h2>
+      <a
+        href="https://mediation.centrepompidou.fr/education/ressources/ENS-dada/ENS-dada.htm"
+        target="_blank"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/437/original/Hausmann.jpeg?1695925865"
+          alt="collage"
+          class="hausmann"
+        />
+      </a>
+      <div class="grid">
+        <a
+          href="https://mediation.centrepompidou.fr/education/ressources/ENS-dada/ENS-dada.htm"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/438/original/Ho%CC%88ch.jpeg?1695925986"
+            alt="collage"
+            class="hoch"
+          />
+        </a>
+        <a
+          href="https://mediation.centrepompidou.fr/education/ressources/ENS-dada/ENS-dada.htm"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/439/original/Ernst.jpeg?1695926001"
+            alt="collage"
+            class="ernst"
+          />
+        </a>
+        <a
+          href="https://kolajmagazine.com/collage-communities/mystic-krewe-of-scissors-glue/"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/440/original/MKSG.jpeg?1695926012"
+            alt="collage"
+            class="mksg"
+          />
+        </a>
+        <a
+          href="https://kolajmagazine.com/collage-communities/special-agent-collage-collective/"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/441/original/SACC.jpeg?1695926022"
+            alt="collage"
+            class="sacc"
+          />
+        </a>
+      </div>
+      <p>
+        Collaging is one of my absolute favourite artistic hobbies! It's a 2-D
+        art technique of bringing different parts of various media together to
+        make a new whole. Not to be confused with <em>pastiche</em> (pasting
+        together), <em>collage</em> may sometimes include magazine and newspaper
+        clippings, ribbons, paint, bit of handmade paper, portions of other
+        artworks, texts, photographs, and/or other found objects & media. These
+        pieces may be assembled together in a variety of ways including, but not
+        limited to, being cut up paper glued on to a canvas, or digitally (which
+        can sometimes result in a 3-D animated collage). <br />My favourite
+        collages are from the Dadaists, some of which you will see featured here
+        from the Centre Pompidou. The other collages are featured from Kolaj
+        Magazine, and look pretty cool!
+      </p>
+      <button>
+        <a href="https://en.wikipedia.org/wiki/Collage" target="_blank"
+          >Learn More About Collaging</a
+        >
+      </button>
+    </div>
+    <footer>
+      Coded by
+      <a href="https://www.linkedin.com/in/mariannerobinson85/" target="_blank"
+        >Marianne Robinson</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
